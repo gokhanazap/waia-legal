@@ -3,17 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Waia — Legal</title>
+  <title>Waia — AI Wealth Assistant</title>
   <style>
-    body { font-family: -apple-system, sans-serif; max-width: 480px; margin: 80px auto; padding: 0 20px; color: #1a1a2e; }
-    h1 { margin-bottom: 24px; }
-    a { color: #4A90D9; text-decoration: none; font-size: 18px; display: block; margin: 12px 0; }
-    a:hover { text-decoration: underline; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a1a; color: #ffffff; }
+    .hero {
+      min-height: 100vh; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; text-align: center;
+      padding: 40px 24px;
+    }
+    .logo-text { font-size: 20px; font-weight: 600; letter-spacing: 2px; color: #4DA3FF; margin-bottom: 32px; }
+    h1 { font-size: 44px; font-weight: 800; line-height: 1.1; margin-bottom: 16px; max-width: 600px; }
+    .tagline { font-size: 18px; color: #999; margin-bottom: 40px; max-width: 480px; line-height: 1.5; }
+    .features {
+      display: flex; flex-wrap: wrap; gap: 16px; justify-content: center;
+      max-width: 600px; margin-bottom: 48px;
+    }
+    .feature {
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px; padding: 16px 20px; width: 170px; text-align: left;
+    }
+    .feature-icon { font-size: 24px; margin-bottom: 8px; }
+    .feature h3 { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+    .feature p { font-size: 12px; color: #888; line-height: 1.4; }
+    .cta {
+      display: inline-block; background: #4DA3FF; color: #fff; font-size: 16px;
+      font-weight: 600; padding: 14px 32px; border-radius: 12px; text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .cta:hover { opacity: 0.85; }
+    .footer {
+      text-align: center; padding: 32px 24px; border-top: 1px solid rgba(255,255,255,0.08);
+      font-size: 13px; color: #666;
+    }
+    .footer a { color: #4DA3FF; text-decoration: none; margin: 0 8px; }
+    .footer a:hover { text-decoration: underline; }
+    @media (max-width: 480px) {
+      h1 { font-size: 32px; }
+      .feature { width: 100%; }
+    }
   </style>
 </head>
 <body>
-  <h1>Waia: AI Wealth Assistant</h1>
-  <a href="privacy-policy.html">Privacy Policy</a>
-  <a href="terms-of-service.html">Terms of Service</a>
+  <div class="hero">
+    <div class="logo-text">WAIA</div>
+    <h1>Track your wealth in one place.</h1>
+    <p class="tagline">Your personal finance companion — track net worth, investments, expenses, and financial goals with AI-powered insights.</p>
+
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon">📊</div>
+        <h3>Net Worth</h3>
+        <p>Track assets, debts, and net worth over time.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🤖</div>
+        <h3>AI Coach</h3>
+        <p>Manage your portfolio with natural language.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">💸</div>
+        <h3>Cashflow</h3>
+        <p>Log income, expenses, and subscriptions.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">📈</div>
+        <h3>Market</h3>
+        <p>Follow stocks and crypto in your watchlist.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">👥</div>
+        <h3>Social</h3>
+        <p>Share and compare with friends.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🎯</div>
+        <h3>Goals</h3>
+        <p>Set financial targets and track progress.</p>
+      </div>
+    </div>
+
+    <a class="cta" href="https://apps.apple.com/app/id6759988527">Download on the App Store</a>
+  </div>
+
+  <div class="footer">
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms-of-service.html">Terms of Service</a>
+    <a href="support.html">Support</a>
+    <p style="margin-top: 12px;">&copy; 2026 Waia. All rights reserved.</p>
+  </div>
 </body>
 </html>
